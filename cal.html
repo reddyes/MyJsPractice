@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<style type="text/css">
+		body{
+			color: white;
+			
+		}
+		table,tr,td{
+			background-color: #32352d;
+			border: none;
+			padding:none;
+		}
+		#btn,#btnr{
+			
+			color:white;
+			border: none;
+			
+			margin: 0;
+		}
+		#calcu{
+			height: 50px;
+		}
+		#btn{
+			height: 50px;
+			background-color: #32352d;
+			width: 40px;
+		}
+		#btnr{
+			background-color: #6c7262;
+			width: 40px;
+			height: 50px;
+		}
+	</style>
+</head>
+<body>
+<form name="calci">
+<table   border="0" align="center">
+
+<tr>
+	<td colspan='5'  ><input  id="calcu" type="text" name="calcu" ></td>
+</tr>
+
+<tr>
+	<td><input id="btn" type="button" name="7" value="7" OnClick="calci.calcu.value=calci.calcu.value+'7'"></td>
+	<td><input id="btn" type="button" name="8" value="8" OnClick="calci.calcu.value+='8'"></td>
+	<td><input id=btn type="button" name="9" value="9" OnClick="calci.calcu.value+='9'"></td>
+	<td><input id="btnr" type="button" name="del" value="DEL" OnClick="calci.calcu.value+=''" ></td>
+</tr>
+
+<tr>
+	<td><input id="btn" type="button" name="4" value="4" OnClick="calci.calcu.value+='4'"></td>
+	<td><input id="btn" type="button" name="5" value="5" OnClick="calci.calcu.value+='5'"></td>
+	<td><input id="btn" type="button" name="6" value="6" OnClick="calci.calcu.value+='6'"></td>
+	<td><input id="btnr" type="button" name="/" value="/" OnClick="calci.calcu.value+='/'"></td>
+</tr>
+<tr>
+	<td><input id="btn" type="button" name="1" value="1" OnClick="calci.calcu.value+='1'"></td>
+	<td><input id="btn" type="button" name="2" value="2" OnClick="calci.calcu.value+='2'"></td>
+	<td><input id="btn" type="button" name="3" value="3" OnClick="calci.calcu.value+='3'"></td>
+	<td><input id="btnr" type="button" name="*" value="*" OnClick="calci.calcu.value+='*'"></td>
+</tr>
+<tr>
+	<td><input id="btn" type="button" name="." value="." OnClick="calci.calcu.value+='.'"></td>
+	<td><input id="btn" type="button" name="0" value="0" OnClick="calci.calcu.value+='0'"></td>
+	<td><input id="btn" type="button" name="=" value="=" OnClick="calci.calcu.value+=eval(calci.calcu.value)"></td>
+	<td><input id="btnr" type="button" name="-" value="-" OnClick="calci.calcu.value+='-'"></td>
+</tr>
+<tr>
+	<td><input id="btn" type="button" name="+" value="+" OnClick="calci.calcu.value+='+'"></td>
+</tr>
+</table></form>
+</body>
+</html>
